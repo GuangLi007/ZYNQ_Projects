@@ -1,0 +1,16 @@
+*.cache
+*.gen
+*.hw
+*.sim
+*.ip_user_files
+*.jou
+*.log
+*.str
+*.backup.log
+*.bit
+*.dcp
+.runs
+.Xil
+vitis_workspace
+vitis_unified_ws
+build/
