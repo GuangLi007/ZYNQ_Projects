@@ -1,21 +1,46 @@
-# Ignore build output directory
-/build
-/export
+# Xilinx build artifacts
+*.o
+*.o.d
+*.hex
+*.elf
+*.map
+*.a
+*.bit
+*.dcp
+*.jou
+*.str
 
-# Ignore object files and dependent files
-.o
-.d
+# Vivado generated directories
+*.cache
+*.gen
+*.hw
+*.sim
+*.ip_user_files
+.runs
+.Xil
+build/
 
-#Ignore logs folder and log files
-/logs
-.log
+# SDK metadata
+.metadata/
+SDK.log
 
-#Ignore lock files
-.lock
+# Debug build directories
+**/Debug/
 
-.bin
-.pdi
-.vitisWorkspace.json
+# Xilinx webtalk
+webtalk/
+.Xil/
+*.backup.jou
+*.backup.log
+*_webtalk.*
 
-_ide/logs
-_ide/.wsdata
+# SDK temporary files
+.sdk/webtalk/
+.sdk/RemoteSystemsTempFiles/
+
+# Vivado IP cache
+**/ipshared/
+
+# Vitis workspace
+vitis_workspace
+vitis_unified_ws

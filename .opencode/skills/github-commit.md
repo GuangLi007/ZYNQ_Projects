@@ -23,12 +23,18 @@ git config user.name "GuangLi007"
 ZYNQ_Projects/
 ├── .gitignore          # 根目录，仅放 OS/IDE 通用规则
 ├── README.md           # 工程总览
-├── Hello_World/        # Vivado 硬件工程
-├── Hello_Vitis/        # Vitis 裸机应用
-└── MIO_Key/            # MIO 按键工程，自带详细 .gitignore
+├── .opencode/          # opencode 配置与技能
+├── Hello_World/        # Vivado 硬件工程（完整自包含）
+├── Hello_Vitis/        # Vitis 裸机应用（完整自包含）
+└── MIO_Key/            # MIO 按键工程（完整自包含）
 ```
 
-每个子工程目录内应有自己的 `.gitignore`，根目录只放全局规则。
+### 目录整合原则
+
+- **每个工程目录完整自包含**：一个父目录下包含该工程的全部内容（.xpr/.xdc/.bd/源码等），不依赖根目录或其他工程目录的任何文件
+- **根目录只放全局文件**：仅保留 `.gitignore`（OS/IDE 通用规则）、`README.md`、`.opencode/`
+- **禁止根目录散放工程文件**：不允许 `MIO_Key.xpr`、`MIO_Key.srcs/`、`MIO_Key.sdk/` 等文件出现在根目录
+- 每个子工程目录内应有自己的 `.gitignore`，处理该工程特有的构建产物（.cache/.hw/.sdk/.sim/等）
 
 ## 提交原则
 
