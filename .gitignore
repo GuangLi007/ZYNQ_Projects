@@ -5,10 +5,25 @@
 *.elf
 *.map
 *.a
+*.bit
+*.dcp
+*.jou
+*.log
+*.str
 
 # Vivado simulation binaries
 *.dll
 *.so
+
+# Vivado generated directories
+*.cache
+*.gen
+*.hw
+*.sim
+*.ip_user_files
+.runs
+.Xil
+build/
 
 # SDK metadata
 .metadata/
@@ -30,6 +45,10 @@ webtalk/
 
 # Vivado IP cache
 **/ipshared/
+
+# Vitis workspace
+vitis_workspace
+vitis_unified_ws
 
 # OS files
 Thumbs.db
