@@ -13,3 +13,11 @@ Desktop.ini
 
 # Windows shortcuts
 *.lnk
+
+# Stale root-level Vivado/SDK files (locked by Vivado, must not be tracked)
+/MIO_Key.cache/
+/MIO_Key.sdk/
+/MIO_Key.hw/
+/MIO_Key.ip_user_files/
+/MIO_Key.srcs/
+/MIO_Key.xpr
