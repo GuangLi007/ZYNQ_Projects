@@ -1,0 +1,36 @@
+# Xilinx SDK / Vivado build artifacts
+*.o
+*.o.d
+*.hex
+*.elf
+*.map
+*.a
+
+# Vivado simulation binaries
+*.dll
+*.so
+
+# SDK metadata
+.metadata/
+SDK.log
+
+# Debug build directories
+**/Debug/
+
+# Xilinx webtalk
+webtalk/
+.Xil/
+*.backup.jou
+*.backup.log
+*_webtalk.*
+
+# SDK temporary files
+.sdk/webtalk/
+.sdk/RemoteSystemsTempFiles/
+
+# Vivado IP cache
+**/ipshared/
+
+# OS files
+Thumbs.db
+.DS_Store
