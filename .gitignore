@@ -1,55 +1,15 @@
-# Xilinx SDK / Vivado build artifacts
-*.o
-*.o.d
-*.hex
-*.elf
-*.map
-*.a
-*.bit
-*.dcp
-*.jou
-*.log
-*.str
-
-# Vivado simulation binaries
-*.dll
-*.so
-
-# Vivado generated directories
-*.cache
-*.gen
-*.hw
-*.sim
-*.ip_user_files
-.runs
-.Xil
-build/
-
-# SDK metadata
-.metadata/
-SDK.log
-
-# Debug build directories
-**/Debug/
-
-# Xilinx webtalk
-webtalk/
-.Xil/
-*.backup.jou
-*.backup.log
-*_webtalk.*
-
-# SDK temporary files
-.sdk/webtalk/
-.sdk/RemoteSystemsTempFiles/
-
-# Vivado IP cache
-**/ipshared/
-
-# Vitis workspace
-vitis_workspace
-vitis_unified_ws
-
 # OS files
 Thumbs.db
 .DS_Store
+Desktop.ini
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Windows shortcuts
+*.lnk
