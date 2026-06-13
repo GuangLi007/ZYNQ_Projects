@@ -11,6 +11,8 @@ ZYNQ_Projects/
 ├── Hello_World/        # Vivado 硬件工程
 │   ├── Hello_Vitis/    # Vitis 裸机应用
 │   └── ...
+├── Interapte/           # 中断工程（MIO 按键中断控制 LED）
+│   └── ...
 └── MIO_Key/            # MIO 按键工程
     └── ...
 ```
@@ -23,7 +25,8 @@ ZYNQ_Projects/
 |---|------|------|
 | 1 | Hello_World | Vivado 硬件工程（最小 Zynq PS 配置，UART0 MIO14-15，115200） |
 | 2 | Hello_Vitis | Vitis 裸机 Hello World 应用，位于 `Hello_World/Hello_Vitis/` |
-| 3 | MIO_Key | Vivado 工程 — 使用 MIO 按键控制 PS LED |
+| 3 | Interapte | Vivado 工程 — MIO 按键中断控制 PS LED（含 Vitis 裸机应用） |
+| 4 | MIO_Key | Vivado 工程 — 使用 MIO 按键控制 PS LED |
 
 ## 工具链
 
