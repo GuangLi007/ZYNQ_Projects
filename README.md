@@ -13,8 +13,11 @@ ZYNQ_Projects/
 │   └── ...
 ├── Interapte/           # 中断工程（MIO 按键中断控制 LED）
 │   └── ...
-└── MIO_Key/            # MIO 按键工程
-    └── ...
+├── MIO_Key/            # MIO 按键工程
+│   └── ...
+└── EMIO_Key/           # EMIO 按键工程（通过 PL GPIO）
+    ├── EMIO_Vitis/     # Vitis 裸机应用源码
+    └── System_wrapper.xsa
 ```
 
 每个工程目录完整自包含，根目录不存放任何工程文件。
@@ -27,6 +30,7 @@ ZYNQ_Projects/
 | 2 | Hello_Vitis | Vitis 裸机 Hello World 应用，位于 `Hello_World/Hello_Vitis/` |
 | 3 | Interapte | Vivado 工程 — MIO 按键中断控制 PS LED（含 Vitis 裸机应用） |
 | 4 | MIO_Key | Vivado 工程 — 使用 MIO 按键控制 PS LED |
+| 5 | EMIO_Key | Vivado 工程 — 使用 EMIO GPIO 控制 PL LED/按键（P15/P16） |
 
 ## 工具链
 
